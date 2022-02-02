@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: linear-gradient(-45deg, #082032, #8a7e80 , #d0f7f7, #5a706b );
+    background-size:400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+@keyframes change {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.warrper{
+    margin-left:8%;
+    margin-right:8%;
+    margin-top: 10%;
+}
+
+.logolink{
+    width: 100%;
+    float: left;
+    height: 10%;
+    background: linear-gradient(-45deg, #091118, #47131c , #162e2e, #111816 );
+    background-size:100% 100%;
+    position: fixed;
+    animation: change 10s ease-in-out infinite;
+    margin-top: -10%;
+}    
+.logo{
+    width:40%;
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+
+}
+.links {
+    width: 50%;
+    float: right;
+  
+}
+
+.links ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.links ul li a{
+    line-height: 80px;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+.links ul li a:hover{
+    background: rgba(0, 0, 0, .7);
+    border-radius: 6px;
+}
+.search{
+    color: rgb(38, 73, 73);
+    width: 100%;
+    float: left;
+}
+.engineering{
+    width: 33%;
+   
+    float: left;
+
+    background: rgba(149, 124, 172, 0.4);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, .2);
+    padding: 30px;
+}
+.health{
+    width: 33%;
+    float: left;
+    background: rgba(236, 111, 111, 0.4);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, .2);
+    padding: 30px;
+}
+
+.it{
+    width: 33%;
+    float: left;
+    background: rgba(40, 247, 212, 0.4);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, .2);
+    padding: 30px;
+}
+
+.business{
+    width: 33%;
+    float: left;
+    background: rgba(255, 124, 222, 0.4);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, .2);
+    padding: 30px;
+}
+.acadamics{
+    width: 33%;
+    float: left;
+    background: rgba(7, 247, 107, 0.4);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, .2);
+    padding: 30px;
+}
+.art{
+    width: 33%;
+    float: left;
+    background: rgba(19, 199, 130, 0.4);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, .2);
+    padding: 30px;
+}
+.footer{
+    
+    width: 100%;
+    float: left;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 10%;
+    margin: auto;
+    text-align: center;
+    background: linear-gradient(-45deg, #091118, #47131c , #162e2e, #111816 );
+    background-size:100% 100%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+.facetwit{
+    float: left;
+    
+    text-align: left;  
+}
+.privterm{
+    float: right;
+    text-align: right; 
+}
+.info{
+    text-align: center;
+    float: left;
+}
