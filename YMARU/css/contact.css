@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: linear-gradient(-45deg, #082032, #8a7e80 , #d0f7f7, #5a706b );
+    background-size:400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+@keyframes change {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.warrper{
+    margin-left:8%;
+    margin-right:8%;
+}
+.image{
+    padding-top: 3%;
+}
+.fill{
+    position: relative;
+    margin-top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background:white ;
+    border-radius: 10px;
+    padding: 30px;
+    
+}
+.fill h1{
+    text-align: center;
+    color: #082032;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver; 
+}
+.fill form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .text_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.radioin label{
+    position:relative;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+    
+}
+.text_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.text_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+    
+}
+.text_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+    
+}
+.text_field input:focus ~ label,
+.text_field input:valid ~ label{
+    top: -5px;
+    color: #2691d9;
+}
+.text_field input:focus ~ span::before,
+.text_field input:valid ~ span::before{
+    width: 100%;
+}
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+input[type="submit"]:hover {
+
+    border-color: #2691d9;
+    transition: .5s;
+}
+.logolink{
+    width: 100%;
+    float: left;
+    height: 12%;
+    background: linear-gradient(-45deg, #091118, #47131c , #162e2e, #111816 );
+    background-size:100% 100%;
+    animation: change 10s ease-in-out infinite;
+    position: fixed;
+}    
+.logo{
+    width:40%;
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+
+}
+.links {
+    width: 50%;
+    float: right;
+    
+    
+}
+
+.links ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.links ul li a{
+    line-height: 80px;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+.links ul li a:hover{
+    background: rgba(0, 0, 0, .7);
+    border-radius: 6px;
+}
+
+.footer{
+    
+    width: 100%;
+    float: left;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 10%;
+    margin: auto;
+    text-align: center;
+    background: linear-gradient(-45deg, #091118, #47131c , #162e2e, #111816 );
+    background-size:100% 100%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
