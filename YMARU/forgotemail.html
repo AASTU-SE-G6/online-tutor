@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mesekir">
+    <meta name="title" content="YMARU online course and tutor login page">
+    <meta name="description" content="Login to access your profile and continue learning.">
+    <mata name="keywords" content="YMARU online education login page distance learning ethiopian study home">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/loginstyle.css">
+        <link rel="shortcut icon" href="../Logo/logo.jpeg">
+        <title>Login YMARU</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-logo">
+            <a href="../ymaru_home.html"><img src="../Logo/logo.jpeg" alt="Website logo YMARU" width="170"
+                    height="170"></a>
+        </div>
+        <div class="title">
+            <font size="5" color="white" face="arial">
+                <h1>YMARU Online Course And Tutor</h1>
+            </font>
+        </div>
+    </div>
+    <div style="clear: left;"></div>
+
+    <div class="warrper">
+        <div class="bodypart">
+            <h1>Please Enter Your Email</h1>
+            <form id="form" name="myform" method="post">
+                <div class="form-control">
+                    <label>Email</label>
+                    <input type="email" placeholder="sdff" id="email">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small> Error message</small>
+                  
+                </div>
+                
+                <button type="submit" id="btn">Log in</button>
+            </form>
+        </div>
+    </div>
+    <!--wrapper end-->
+    <div style="clear: left;"></div>
+
+    <div class="footer">
+        <div class="footer-lists">
+            <div class="footer-logo-link">
+                <div class="ymaru-logo">
+                    <a href="../ymaru_home.html"><img src="../Logo/logo.jpeg" width="60" height="60"
+                            title="YMARU Home"></a>
+                </div>
+                <div class="ymaru-text">
+                    <p><a href="../ymaru_home.html"><span>YMARU</span> Online Course &amp; Tutor</a></p>
+                </div>
+            </div>
+            <div class="social-medias">
+                <p>Follow Us On</p>
+                <ul>
+                    <li><a href="http://facebook.com" target="_blank"> <img src="../Images/facebook.png">
+                            <font face="arial">Facebook</font>
+                        </a></li>
+                    <li><a href="http://twitter.com" target="_blank"> <img src="../Images/twitter.png">
+                            <font face="arial">Twitter</font>
+                        </a></li>
+                    <li><a href="http://instagram.com" target="_blank"> <img src="../Images/instagram-square.jpg">
+                            <font face="arial">Instagram</font>
+                        </a></li>
+                    <li><a href="http://youtube.com" target="_blank"> <img src="../Images/youtube.png">
+                            <font face="arial">Youtube</font>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="contacts">
+                <p>Get in Touch</p>
+                <ul>
+                    <li>Phone: +251 9123 456 789</li>
+                    <li>Fax: ....</li>
+                    <li>Email: <a href="mailto:mesekirgetch@gmail.com">ymaru@edu.com</a></li>
+                </ul>
+            </div>
+            <div class="news-letter">
+                <p>Subscribe to our news letter</p>
+                <div class="email-input">
+                    <input type="text" name="newsletter" placeholder="Your email">
+                    <input type="submit" value="Send">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="privterm">
+                <a href="privacy.html">
+                    <font face="arial">Privacy</font>
+                </a>
+                <a href="terms.html">
+                    <font face="arial">Terms of Use</font>
+                </a>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; YMARU 2022, All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+    
+
+<script>
+    const form= document.getElementById("form");
+    const email = document.getElementById("email");
+    form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            checkInput1();
+        });
+        function checkInput1(){
+           const emailValue = email.value.trim();
+    let  validate = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (emailValue == '') {
+            setErrorFor(email, 'email can not be left blank.');
+
+        } else if (emailValue != localStorage.getItem("Emails")) {
+            setErrorFor(email, 'Incorrect email.');
+        } else if (emailValue.match(validate)) {
+            emSecc = 1;
+            setSuccessFor(email);
+            alert("You password is " + localStorage.getItem(emailValue) +"   now go to the login page and login!");
+
+        } 
+       
+        }
+        
+    
+         function setErrorFor(input, message) {
+
+                const formControl = input.parentElement;// getting .form-control class
+
+                const small = formControl.querySelector("small");
+                console.log(formControl + "username excuted");
+                //add error message inside small
+                small.innerText = message;
+                //add error class
+
+                formControl.className = 'form-control error';
+            }
+            function setSuccessFor(input) {
+                const formControl = input.parentElement;
+                formControl.className = 'form-control success';
+            }
+</script>
+
+</body>
+
+</html>
