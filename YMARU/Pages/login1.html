@@ -1,113 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 	<meta charset="UTF-8">
+	<meta name="author" content="Mesekir">
+	<meta name="title" content="YMARU online course and tutor login page">
+	<meta name="description" content="Login to access your profile and continue learning.">
+	<mata name="keywords" content="YMARU online education login page distance learning ethiopian study home">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>
-online tutor
-   </title> 
+	<link rel="stylesheet" href="../css/loginstyle.css">
+	<link rel="shortcut icon" href="../Logo/logo.jpeg">
+   <title>Login YMARU</title> 
 </head>
 <body>
-	<table width=100% bgcolor="black">
-        <tr width=100%>
-            <th align=center>
-                <img src="..\Logo\logo.jpeg" alt="Website logo YMARU" width="200" height="200">
-                <font size="5" color="white" face="arial">
-                    <h1>YMARU Online Course And Tutor</h1>
-               </font>
-                
-                <hr>
-            </th>
-        </tr>
-    </table>
-	<table>
+	<div class="header">	
+			<div class="header-logo">
+				<a href="../ymaru_home.html"><img src="../Logo/logo.jpeg" alt="Website logo YMARU" width="170" height="170"></a>
+			</div>
+			<div class="title">
+				<font size="5" color="white" face="arial">
+					<h1>YMARU Online Course And Tutor</h1>
+				</font>
+			</div>
+	</div>
+	<div style="clear: left;"></div>
 
-	</table>
-<table border="0" id="contact" width="100%" cellpadding="0" cellspacing="0" bgcolor="c2c0c3">
-  <tr>
-  	 <td>
-  	 	<table border="0" width="100%" cellpadding="15" cellspacing="0" align="center">
-  	 	<!-- Heading Start-->
-          <tr>
-           	  <td height="20" align="center" valign="middle">
-           	  	 <font face="arial" size="6" color="black">
-           	  	   Fill the provided information 
-           	  	</font>
-           	  	<hr width="120" color="black">
-           	  </td>
-          </tr>
-        <!-- Heading  End-->
-        <tr>
-        	<td align="center" valign="top">
-        	  <table border="0" width="65%" cellpadding="5" cellspacing="0" align="center" bgcolor="#353535">
-        	  	<tr>
-        	  		<td>
-        	   <table border="0" width="10%" cellpadding="5" cellspacing="0" align="center" bgcolor="353535">
-        		 <tr>
-        		 	<td width="10%">
-        		 		
-<form >
-	 	<label><font face="arial" size="4" color="white">Select
-				</font></label>	   
-		<input type="radio" name="select"><label><font face="arial" size="2" color="white">Student
-		 		</font></label>
-		<input type="radio" name="select"><label><font face="arial" size="2" color="white">Tutor
-				 </font></label><br><br> 
-        <label ><font face="arial" size="4" color="white">User Name
-        		</font></label>
-                <input type="text" name="userName" placeholder="Enter username"><br><br>    
-         <label><font face="arial" size="4" color="white">Email
-        		 </font></label> 	    
-        		 <input type="email" name="email"placeholder="OTFL@gmail.com"required><br><br>	
-        	               
-         <label><font face="arial" size="4" color="white">Password
-        		</font></label>	    
-        		 <input type="password" id="password" name="password" min="5" placeholder="Enter password" required><br><br> 
+	<div class="warrper">
+		<div class="bodypart" >
+           	<h1>Login</h1> 
+			<form id="form" name="myform" method="post" >
+				<div class="radioin"><input type="radio" name="registerAs" id="student" value="student">
+					<label>Student</label>
+				</div>
+				<div class="radioin"><input type="radio" name="registerAs" id="tutor" value="tutor">
+					<label>Tutor</label>
+				</div>
+				<div class="form-control">
+					<label>username</label>
+					<input type="text" placeholder="sdff" id="username">
+					<i class="fas fa-check-circle"></i>
+					<i class="fas fa-exclamation-circle"></i>
+					<small> Error message</small>
+				</div>
+				<div class="form-control">
+					<label>Email</label>
+					<input type="email" placeholder="sdff" id="email">
+					<i class="fas fa-check-circle"></i>
+					<i class="fas fa-exclamation-circle"></i>
+					<small> Error message</small>
+				</div>
+				<div class="form-control">
+					<label>Password</label>
+					<input type="password" id="password">
+					<i class="fas fa-check-circle"></i>
+					<i class="fas fa-exclamation-circle"></i>
+					<small> Error message</small>
+				</div>
+				<div class="forgot-pwd">
+					<p><a href="forgotemail.html">Forgot password?</a></p>
+				</div>
+				<button type="submit" id="btn" >Log in</button>
+			</form>	
+        </div>
+	</div><!--wrapper end-->
+	<div style="clear: left;"></div>
+
+	<div class="footer">
+        <div class="footer-lists">
+            <div class="footer-logo-link">
+                <div class="ymaru-logo">
+                    <a href="../ymaru_home.html"><img src="../Logo/logo.jpeg" width="60" height="60" title="YMARU Home"></a>
+                </div>
+                <div class="ymaru-text">
+                    <p><a href="../ymaru_home.html"><span>YMARU</span> Online Course &amp; Tutor</a></p>
+                </div>
+            </div>
+            <div class="social-medias" >
+                <p>Follow Us On</p>
+                <ul>
+                    <li><a href ="http://facebook.com" target="_blank"> <img src="../Images/facebook.png"> <font face="arial">Facebook</font></a></li>
+                    <li><a href ="http://twitter.com" target="_blank"> <img src="../Images/twitter.png"> <font face="arial">Twitter</font></a></li>
+                    <li><a href="http://instagram.com" target="_blank"> <img src="../Images/instagram-square.jpg"> <font face="arial">Instagram</font></a></li>
+					<li><a href="http://youtube.com" target="_blank"> <img src="../Images/youtube.png"> <font face="arial">Youtube</font></a></li>
+                </ul>
+            </div>
+            <div class="contacts">
+                <p>Get in Touch</p>
+                <ul>
+                    <li>Phone: +251 9123 456 789</li>
+                    <li>Fax: ....</li>
+                    <li>Email: <a href="mailto:mesekirgetch@gmail.com">ymaru@edu.com</a></li>
+                </ul>
+            </div>
+            <div class="news-letter">
+                <p>Subscribe to our news letter</p>
+                <div class="email-input">
+                        <input type="text" name="newsletter" placeholder="Your email">
+                        <input type="submit" value="Send">
+                </div>
+            </div>
+        </div>
         
-	        		    		<button type="submit" >
-        		    		<font size="2" face="arial"><a href="..\website new 2.html">Log In</a></font>
-        		    		</button><br><br>
-        		    	</form>	
-        		 </tr>
-        	   </table>
-        	
-        
- </td></tr></table>
-   <table border="0" width="100%" cellpadding="1" bgcolor="black">
-  <tr>
-	<td width="10%"></td>
-	<td width="55%" colspan="2"><hr></td>
-	<td width="25%"></td>
-	<td width="10%"></td>
-</tr>
+        <div class="footer-bottom">
+            <div class="privterm">
+                <a href ="privacy.html"><font face="arial">Privacy</font></a>
+                <a href ="terms.html"><font face="arial">Terms of Use</font></a>
+            </div>
+            <div class="copyright"> 
+                <p>Copyright &copy; YMARU 2022, All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+	<script src="../JS/tuteeP.js"></script>
+	<script src="../JS/signup.js"></script>
+	<script src="../JS/login.js"></script>
+	
+	
 
-<tr>
-	<td width="10%"></td>
-	<td width="55%">
-	Follow Us On:
-		<a href ="facebook.com" target="_blank">Facebook</a>|
-		<a href ="twitter.com" target="_blank">Twitter</a>
-	</td>
-	<td width="25%" align="right">
-		<a href ="privacy.html">Privacy</a>|
-		<a href ="terms.html">Terms of Use</a>
-	</td>
-	<td width="10%"></td>
-</tr>
-
-<tr>
-	<td width="10%"></td>
-	<td width="55%" colspan="2" align="center"> <p>
-        <font face="arial" size="3" color="#c2c0c3">
-            <h2>Copyright &copy YMARU 2021, All Rights Reserved</h2>
-    </font>
-  </p></td>
-	<td width="25%"></td>
-	<td width="10%"></td>
-</tr>
-
-
-</table> 
 </body>
 </html>
